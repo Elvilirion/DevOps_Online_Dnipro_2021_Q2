@@ -1,0 +1,109 @@
+a8afa8d (HEAD -> develop, origin/images, origin/develop, images) HEAD@{0}: merge images: Fast-forward
+ec27781 HEAD@{1}: checkout: moving from styles to develop
+0cde162 (origin/styles, styles) HEAD@{2}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+53b7417 HEAD@{3}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+ec27781 HEAD@{4}: checkout: moving from develop to styles
+ec27781 HEAD@{5}: checkout: moving from images to develop
+a8afa8d (HEAD -> develop, origin/images, origin/develop, images) HEAD@{6}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+d0714b4 HEAD@{7}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+ec27781 HEAD@{8}: checkout: moving from develop to images
+ec27781 HEAD@{9}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+b441162 (origin/master, master) HEAD@{10}: checkout: moving from master to develop
+b441162 (origin/master, master) HEAD@{11}: commit (initial): Initial commi
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Slivovenkiy@Slivovenkiy MINGW64 ~
+$ cd C:/Users/Slivovenkiy/DevOps/DevOps_Online_Dnipro_2021_Q2
+
+Slivovenkiy@Slivovenkiy MINGW64 ~/DevOps/DevOps_Online_Dnipro_2021_Q2 (develop|MERGING)
+$ git status
+On branch develop
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   m1/Task1.1/Styles/color.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   m1/Task1.1/Test.html
+
+
+Slivovenkiy@Slivovenkiy MINGW64 ~/DevOps/DevOps_Online_Dnipro_2021_Q2 (develop|MERGING)
+$ nano m1/Task1.1/
+ReadMe.txt  Styles/     Test.html   images/
+[develop 3786873] Merge branch 'styles' into develop
+
+Slivovenkiy@Slivovenkiy MINGW64 ~/DevOps/DevOps_Online_Dnipro_2021_Q2 (develop)
+$ git status
+On branch develop
+nothing to commit, working tree clean
+
+Slivovenkiy@Slivovenkiy MINGW64 ~/DevOps/DevOps_Online_Dnipro_2021_Q2 (develop)
+$ git log
+commit 3786873c8743bbea1805527ccafee23822e8873e (HEAD -> develop)
+Merge: a8afa8d 0cde162
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Fri Mar 19 12:06:03 2021 +0200
+
+    Merge branch 'styles' into develop
+
+commit 0cde16253f312b8db3eb16503ac99fb730df22fb (origin/styles, styles)
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Thu Mar 18 15:04:19 2021 +0200
+
+    ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+
+commit 53b7417b4b73f6c353e08b2bfe99f42bccbbc246
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Thu Mar 18 14:56:55 2021 +0200
+
+    ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+
+commit a8afa8d47def92a3a50a631c906fe86d9aa977d6 (origin/images, origin/develop, images)
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Thu Mar 18 14:24:47 2021 +0200
+
+    ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+
+commit d0714b4c73d291c657656566fac9978627e8839c
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Thu Mar 18 14:11:33 2021 +0200
+
+    ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+
+commit ec2778175b604ff1455b8bc941d280ad292e729e
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Thu Mar 18 12:35:25 2021 +0200
+
+    ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+
+commit b4411627ae406cf08b5f373ec3aee587981593a0 (origin/master, master)
+Author: Sergii Kochetkov <sergey.kochetkov1@gmail.com>
+Date:   Wed Mar 17 12:52:48 2021 +0200
+
+    Initial commit
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Slivovenkiy@Slivovenkiy MINGW64 ~/DevOps/DevOps_Online_Dnipro_2021_Q2 (master)
+$ git reflog
+3786873 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{0}: checkout: moving from develop to master
+3786873 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{1}: checkout: moving from master to develop
+3786873 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{2}: merge develop: Fast-forward
+b441162 HEAD@{3}: checkout: moving from develop to master
+3786873 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{4}: commit (merge): Merge branch 'styles' into develop
+a8afa8d (origin/images, images) HEAD@{5}: merge images: Fast-forward
+ec27781 HEAD@{6}: checkout: moving from styles to develop
+0cde162 (origin/styles, styles) HEAD@{7}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+53b7417 HEAD@{8}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+ec27781 HEAD@{9}: checkout: moving from develop to styles
+ec27781 HEAD@{10}: checkout: moving from images to develop
+a8afa8d (origin/images, images) HEAD@{11}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+d0714b4 HEAD@{12}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+ec27781 HEAD@{13}: checkout: moving from develop to images
+ec27781 HEAD@{14}: commit: ╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ
+b441162 HEAD@{15}: checkout: moving from master to develop
+b441162 HEAD@{16}: commit (initial): Initial commit
